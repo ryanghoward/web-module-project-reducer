@@ -60,7 +60,7 @@ const reducer = (state, action) => {
     case MEMORY_RECALL:
       return {
         ...state,
-        total: state.total,
+        total: state.total + action.payload,
       };
 
     case MEMORY_CLEAR:
